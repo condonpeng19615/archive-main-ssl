@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>球探 · 持续追踪赛场动向</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #fafafa;
+            color: #1e1e1e;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+        /* hero */
+        .hero {
+            margin-bottom: 3.5rem;
+            padding-top: 1.2rem;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+            color: #111;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            color: #5a5a5a;
+            max-width: 520px;
+            margin-bottom: 1.8rem;
+        }
+        .hero .sub a {
+            color: #1a5cff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(26,92,255,0.2);
+            font-weight: 450;
+        }
+        .hero .sub a:hover {
+            border-bottom-color: #1a5cff;
+        }
+        .hero .meta-note {
+            font-size: 0.82rem;
+            color: #8a8a8a;
+            border-left: 2px solid #ddd;
+            padding-left: 1rem;
+        }
+        /* section */
+        section {
+            margin-bottom: 3rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+            color: #222;
+        }
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #2a2a2a;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            color: #3a3a3a;
+        }
+        .card-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin: 1.5rem 0 2rem;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 14px;
+            padding: 1.25rem 1.5rem;
+            transition: border 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            border-color: #cbd5ff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #4a4a4a;
+            margin-bottom: 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ececec;
+            padding: 1rem 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-q {
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+            color: #1f1f1f;
+        }
+        .faq-a {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        .faq-a a {
+            color: #1a5cff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(26,92,255,0.2);
+        }
+        .faq-a a:hover {
+            border-bottom-color: #1a5cff;
+        }
+        .footnote {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e2e2;
+            font-size: 0.88rem;
+            color: #6f6f6f;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+        .footnote a {
+            color: #1a5cff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(26,92,255,0.15);
+        }
+        .footnote a:hover {
+            border-bottom-color: #1a5cff;
+        }
+        .footnote .col {
+            flex: 1 1 180px;
+        }
+        .tagline {
+            font-size: 0.85rem;
+            color: #8a8a8a;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 1.5rem 1rem 2.5rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .card {
+                padding: 1rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- hero -->
+    <div class="hero">
+        <h1>赛场信息，值得反复回来</h1>
+        <div class="sub">
+            大多数深度关注赛事的用户，都会把 <a href="https://main-ssl-qiutan.com">球探</a> 放进浏览器书签。不是为了某一次查询，而是为了日后持续衔接赛程、阵容与实时动态。
+        </div>
+        <div class="meta-note">
+            新访客 · 常回来看看 · 收藏即入口
+        </div>
+    </div>
+
+    <!-- 优势区：为什么值得持续关注 -->
+    <section>
+        <h2>为什么再次回到这里</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>数据随赛季沉淀</h3>
+                <p>赛程、积分榜、球员统计并非一次性信息。随着联赛推进，历史数据与当前趋势叠加，每次回看都能获得新的对照视角。</p>
+            </div>
+            <div class="card">
+                <h3>界面轻，加载快</h3>
+                <p>没有冗余广告和自动播放的流媒体。页面结构稳定，无论是电脑还是手机，都能在几秒内定位到你想看的赛事节点。</p>
+            </div>
+            <div class="card">
+                <h3>不变的主域名</h3>
+                <p>对经常关注赛事的用户而言，一个长期可访问的地址本身就是价值。<a href="https://main-ssl-qiutan.com">球探</a>始终使用同一主站，减少重新查找的成本。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 说明区：从关注到持续使用 -->
+    <section>
+        <h2>从一次访问到长期关注</h2>
+        <p>很多人最初是因为某场焦点战或某个转会传闻找到这里。但使用几次后会发现，真正让人留下来的，是信息本身的连贯性——你不需要每轮比赛都重新搜索赛程表，也不需要记住多个第三方工具。</p>
+        <p>把站点收藏起来，相当于在信息流里为自己保留了一个固定的“观测点”。下次想看某支球队的近期状态、某位球员的出场时间，或者单纯想确认下一轮开球时间，打开书签就够了。</p>
+        <p style="margin-top: 1.2rem; font-size: 0.95rem; background: #f0f3ff; padding: 0.8rem 1.2rem; border-radius: 10px;">
+            📎 小提示：将 <a href="https://main-ssl-qiutan.com">球探</a> 添加到浏览器书签栏，或设为移动端主屏幕快捷方式，下次访问只需一次点击。
+        </p>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+        <h2>常见疑问 · 摘要</h2>
+        <div class="faq-item">
+            <div class="faq-q">是否需要注册才能浏览赛程？</div>
+            <div class="faq-a">不需要。所有公开赛程、积分、阵容信息均可直接浏览。部分深度数据统计可自由查看，无需登录。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">数据更新频率如何？</div>
+            <div class="faq-a">赛程与实时比分在比赛日同步更新。赛后统计通常在当日完成，历史数据长期保留，可跨赛季对比。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">如何快速找到之前看过的队伍页面？</div>
+            <div class="faq-a">建议直接使用浏览器书签收藏队伍页面或赛事页面。你还可以在站内使用搜索功能，输入队名即可定位。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">移动端浏览体验是否与桌面一致？</div>
+            <div class="faq-a">页面采用响应式布局，手机与平板均可获得清晰的阅读体验。竖屏模式下赛程表格会自动适配。</div>
+        </div>
+    </section>
+
+    <!-- 底部链接 -->
+    <div class="footnote">
+        <div class="col">
+            <strong>持续关注</strong><br>
+            <a href="https://main-ssl-qiutan.com">球探</a> · 赛程与数据
+        </div>
+        <div class="col">
+            <strong>信息备忘</strong><br>
+            建议每周回看一次积分变动<br>
+            <span class="tagline"># 收藏即入口</span>
+        </div>
+        <div class="col" style="flex-basis: 100%; margin-top: 0.8rem;">
+            <span style="font-size: 0.82rem; color: #9a9a9a;">页面仅供介绍 · 实际内容以主站为准</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
